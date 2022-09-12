@@ -1,7 +1,7 @@
 #for DHT11
 import serial # importing from serial librery
 ser= serial.Serial('COM5', 9600, timeout=1)
-while ():
+while (True):
     value=ser.readline().decode("utf-8") #decode("utf-8")= for decoding  tempature from DHT11
     hum=ser.readline().decode("utf-8")# decode humidity from DHT11
     if(value):
