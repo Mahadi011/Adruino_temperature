@@ -1,0 +1,21 @@
+#include <DHT.h>
+#define Type DHT11
+int sensePin=2;
+DHT HT(sensePin,Type);
+float tempC;
+int dt=1000;
+int settime=500;
+
+void setup()
+{
+Serial.begin(9600);
+HT.begin();
+delay(settime);
+}
+void loop()
+{
+  tempC = HT.readTemperature();
+  Serial.print(tempC);
+  Serial.println("c");
+  delay(dt);
+}
