@@ -1,6 +1,6 @@
 #include <DHT.h>
 #define Type DHT11
-int sensePin=2;
+int sensePin=2; //Have to select pin 2 for the signal
 DHT HT(sensePin,Type);
 float tempC;
 int dt=1000;
