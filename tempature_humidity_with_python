@@ -1,4 +1,8 @@
 #for DHT11
+# You need to install in the terminal.
+#pip3 install requests
+#pip3 install pyserial
+
 import serial # importing from serial librery
 ser= serial.Serial('COM5', 9600, timeout=1)
 while (True):
